@@ -12,6 +12,7 @@ class ItemPage extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(tempItem.name),
+          centerTitle: true,
           flexibleSpace: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -27,19 +28,20 @@ class ItemPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
-              margin: EdgeInsets.fromLTRB(16, 8, 16, 8),
+              margin: EdgeInsets.all(10),
               child: Text('Weight Item : ' + tempItem.weight),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(16, 8, 16, 8),
+              margin: EdgeInsets.all(10),
               child: Text('Amount Item : ' + tempItem.amount.toString()),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(16, 8, 16, 8),
+              margin: EdgeInsets.all(10),
               child: Text('Price Item  : ' + tempItem.price.toString()),
             ),
 
             Container(
+              margin: EdgeInsets.all(20),
               width: 100.0,
               height: 50.0,
               decoration: BoxDecoration(
