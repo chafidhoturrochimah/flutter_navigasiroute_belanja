@@ -4,8 +4,10 @@ import 'package:flutter_navigasiroute_belanja/pages/item_page.dart';
 
 class HomePage extends StatelessWidget {
   final List<Item> items = [
-    Item(name: 'Sugar', price: 5000),
-    Item(name: 'Salt', price: 2000)
+    Item(name: 'Sugar', weight: '500 gr', amount: 100, price: 5000),
+    Item(name: 'Salt', weight: '500 gr', amount: 100, price: 2000),
+    Item(name: 'Onion', weight: '1 kg', amount: 100, price: 10000),
+    Item(name: 'Ketchup', weight: '500 ml', amount: 100, price: 5000),
   ];
 
   @override
@@ -14,6 +16,15 @@ class HomePage extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Shopping List'),
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xff0096ff), Color(0xff6610f2)],
+                begin: FractionalOffset.bottomLeft,
+                end: FractionalOffset.topRight
+              )
+            ),
+          ),
         ),
 
         body: Container(
