@@ -1,4 +1,4 @@
-<center><b>NAVIGATOR DAN ROUTE</b></center>
+<b>NAVIGATOR DAN ROUTE</b>
 
 <ul>
   <li><b>Nama    : Chafidhoturrochimah</b></li>
